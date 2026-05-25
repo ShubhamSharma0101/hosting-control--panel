@@ -18,6 +18,7 @@ const deployContainer = ({ image, clientName , port}) => {
                 docker rm -f ${containerName} || true &&
                 docker run -d \
                 --name ${containerName} \
+                --restart unless-stopped \
                -p ${port}:80 \
                 ${image}
                 `;
