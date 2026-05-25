@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.1053.0",
+    "bullmq": "^5.77.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.2",
+    "morgan": "^1.10.1",
+    "ssh2": "^1.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "worker": "node worker.js"
+  }
+}
